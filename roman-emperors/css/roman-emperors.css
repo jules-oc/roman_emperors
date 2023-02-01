@@ -2,6 +2,10 @@ p.first::first-letter {
   font-size: 200%;
 }
 
+div p {
+  background-color: white;
+}
+
 main p:first-child {
   font-style: italic;
 }
@@ -11,7 +15,15 @@ main p:first-child {
 }
 
 h1, h2 {
-  color: var(--fancy-color);
+  font-size: 12pt;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: bolder;
+  color: #800000;
+  a:link { color: blue; }
+  a:hover, a:focus { color: red; }
+  main p:first-child { font-weight: normal; }
+  main p:first-child::first-letter { font-size: 12pt; }
 }
 
 p q  {
@@ -21,3 +33,4 @@ p q  {
 main>p {
   line-height: 200%;
 }
+#copyright { font-size: 80%; }
